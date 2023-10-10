@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
     <link rel="icon" href="images/logo-black.svg">
     <link rel="stylesheet" href="fonts/fonts.css">
@@ -14,55 +14,50 @@
 
 <body>
     <header class="header">
-        <section class="header-data">
-            <nav class="navigate-menu">
-                <ul class="header-menu-list">
-                    <li class="unmarked-li">
+        <section class="header__data">
+            <nav>
+                <ul class="header__menu-list">
+                    <li>
                         <a href="#">главная</a>
                     </li>
-                    <li class="marked-li">
+                    <li class="marked-li-item">
                         <a class="link-underline" href="#lots-title-id">посмотреть лоты</a>
                     </li>
-                    <li class="marked-li">
+                    <li class="marked-li-item">
                         <a class="link-underline" href="#about-title-id">об аукционе</a>
                     </li>
                 </ul>
             </nav>
 
-            <address class="contacts">
-                <ul class="contacts-list">
-                    <li class="unmarked-li">
+            <address class="address">
+                <ul class="list">
+                    <li>
                         <a class="link-underline" href="tel:+99995555555">+9 999 555 5555</a>
                     </li>
-                    <li class="unmarked-li">
+                    <li>
                         <a class="link-underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
                     </li>
-                    <li class="unmarked-li">
+                    <li>
                         <p>наб. Принсенграхт 263-265, Амстердам</p>
                     </li>
                 </ul>
             </address>
         </section>
 
-        <a class="logo-link" href="#">
-            <img class="logo" src="images/logo-black.svg" alt="Логотип ОНО ТЕБЕ НАДО">
+        <a class="header__logo">
+            <img src="images/logo-black.svg" alt="Логотип ОНО ТЕБЕ НАДО">
         </a>
     </header>
 
     <main>
-        <section class="jambotron">
-            <img class="jambotron-img" src="images/cover.jpg" alt="Баннер ОНО ТЕБЕ НАДО">
+        <section class="cover">
+            <img class="cover-image" src="images/cover.jpg" alt="Баннер ОНО ТЕБЕ НАДО">
 
-            <section class="jambotron-title">
-                <p class="title-word">о<span class="word-spacing">но</span></p>
-                <p class="title-word word-center">те<span class="word-spacing">бе</span></p>
-                <p class="title-word word-end"><span class="word-spacing">н</span>ад<span class="word-spacing-end">о</span></p>
-            </section>
+            <h1 class="cover__title">О<span class="letter-spacing-extended">но</span><span class="aligned-text_center">те<span class="letter-spacing-extended">бе</span></span><span class="aligned-text_right"><span class="letter-spacing-extended">н</span>ад<span class="no-letter-spacing">о</span></span></h1>
             
-
-            <footer class="jambotron-footer">
-                <p class="jambotron-footer-text">Аукцио<span class="wer">н</span> вещей<span class="wer">,</span> <span class="wer">в</span> которы<span class="wer2">е</span> никт<span class="wer2">о</span> н<span class="wer3">е</span> вери<span class="wer">л</span></p>
-                <button class="button">Сделать ставку</button>
+            <footer class="cover__description">
+                <p class="cover__description-text">Аукцион вещей, в которые никто не верил</p>
+                <button class="bet-button">Сделать ставку</button>
             </footer>
         </section>
 
@@ -83,7 +78,7 @@
                 <h3 class="lot-title">Картина, которую повторит даже 5-летний сын маминой подруги</h3>
                 <p class="lot-text">Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков… Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?</p>
             </div>
-            <p class="show-more">посмотреть больше</p>
+            <a class="show-more" href="#0">посмотреть больше</a>
         </section>
 
         <section class="about">
@@ -97,48 +92,47 @@
     </main>
 
     <footer class="footer">
-        <address class="contacts">
-            <ul class="contacts-list">
-                <li class="unmarked-li">
+        <address class="address">
+            <ul class="list">
+                <li>
                     <a class="link-underline" href="tel:+99995555555">+9 999 555 5555</a>
                 </li>
-                <li class="unmarked-li">
+                <li>
                     <a class="link-underline" href="mailto:info@sobaka.ge">info@sobaka.ge</a>
                 </li>
-                <li class="unmarked-li">
+                <li>
                     <p>наб. Принсенграхт 263-265, Амстердам</p>
                 </li>
             </ul>
         </address>
 
-        <nav class="navigate-menu">
+        <nav>
             <ul class="footer-menu-list">
-                <li class="unmarked-li">
+                <li>
                     <a href="#">главная</a>
                 </li>
-                <li class="unmarked-li">
+                <li>
                     <a class="link-underline" href="#lots-title-id">посмотреть лоты</a>
                 </li>
-                <li class="unmarked-li">
+                <li>
                     <a class="link-underline" href="#about-title-id">об аукционе</a>
                 </li>
             </ul>
         </nav>
 
         <section class="socials">
-            <a href="#">
+            <a href="#0">
                 <img class="socials-img" src="images/yt.svg" alt="Логотип YouTube">
             </a>
 
-            <a href="#">
+            <a href="#0">
                 <img class="socials-img" src="images/vk.svg" alt="Логотип VK">
             </a>
 
-            <a href="#">
+            <a href="#0">
                 <img class="socials-img" src="images/pinterest.svg" alt="Логотип Pinterest">
             </a>
         </section>
-
     </footer>
 </body>
 </html>
