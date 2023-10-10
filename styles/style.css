@@ -31,11 +31,6 @@ a {
     height: 100%;
 }
 
-.navigate-menu {
-    /*display: flex;
-    align-items: center;*/
-}
-
 .header-menu-list {
     display: flex;
     flex-direction: row;
