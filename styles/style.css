@@ -21,6 +21,7 @@ ul {
     list-style-type: none;
 }
 
+/*header-----------------------------------------------------------*/
 
 .header {
     height: 293px;
@@ -80,6 +81,8 @@ ul {
     margin: auto;
     width: 137px;
 }
+
+/*cover-----------------------------------------------------------*/
 
 .cover {
     display: grid;
@@ -148,8 +151,6 @@ ul {
     grid-column: 1/2;
     z-index: 2;
     align-self: end;
-
-
 }
 
 .cover__description-text {
@@ -192,20 +193,15 @@ ul {
     text-transform: uppercase;
 }
 
-.lots {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 25px;
-    row-gap: 27px;
+/*lots-----------------------------------------------------------*/
 
-    margin-top: 180px;
+.lots {
+    padding-top: 180px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-.lots-title {
-    grid-column: 1/4;
-    grid-row: 1/2;
+.lots__heading {
 
     padding-left: 40px;
 
@@ -217,27 +213,44 @@ ul {
     text-transform: uppercase;
 }
 
-.lot-item {
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-row: 2/3;
-    height: 450px;
+.lots__card-list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
 
-    background-color: #000;
+    padding-top: 27px;
 }
 
-.lot-img {
+.lots__card-list-item {
+    flex-grow: 1;
+    width: 430px;
+    min-height: 450px;
+    
+}
+
+.card-link {
+    display: block;
+
+    height: 100%;
+}
+
+.card {
+    display: grid;
+    
+    background-color: black;
+}
+
+.card__image {
     grid-row: 1/2;
     grid-column: 1/2;
 
     opacity: 0.6;
 }
 
-.lot-title {
+.card__title {
     grid-row: 1/2;
     grid-column: 1/2;
     z-index: 1;
-    align-self: start;
 
     padding-top: 50px;
     padding-left: 40px;
@@ -252,7 +265,7 @@ ul {
     text-transform: uppercase;
 }
 
-.lot-text {
+.card__text {
     grid-row: 1/2;
     grid-column: 1/2;
     z-index: 1;
@@ -269,13 +282,12 @@ ul {
     line-height: 120%; /* 24px */
 }
 
-.show-more {
-    grid-row: 3/4;
-    grid-column: 1/4;
-    justify-self: start;
+.lots__look-more-link {
+    display: inline-block;
 
-    padding-top: 3px;
+    padding-top: 30px;
     margin-left: 40px;
+
     border-bottom: 1px solid #000;
 
     color: #000;
@@ -284,6 +296,8 @@ ul {
     font-weight: 400;
     line-height: normal;
 }
+
+/*about-----------------------------------------------------------*/
 
 .about {
     display: grid;
@@ -296,7 +310,7 @@ ul {
     padding-right: 50px;
 }
 
-.about-logo-box {
+.about__logo {
     display: flex;
     grid-row: 1/2;
     grid-column: 1/2;
@@ -308,15 +322,14 @@ ul {
     height: 240px;
     border-radius: 120px;
 
-    background-color: #000;
+    background-color: black;
 }
 
-.about-logo {
+.about__logo-image {
     width: 148px;
-    height: 114px;
 }
 
-.about-title {
+.about__title {
     grid-row: 1/2;
     grid-column: 2/3;
     align-self: center;
@@ -332,12 +345,12 @@ ul {
     text-transform: uppercase;
 }
 
-.about-text-1 {
-    grid-row: 2/3;
+.about__text {
     grid-column: 2/3;
 
     padding-top: 9px;
     padding-left: 25px;
+    padding-bottom: 20px;
 
     color: #000;
     font-size: 20px;
@@ -346,34 +359,17 @@ ul {
     line-height: 115%;
 }
 
-.about-text-2 {
-    grid-row: 3/4;
-    grid-column: 2/3;
-
-    padding-top: 29px;
-    padding-left: 25px;
-
-    color: #000;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 115%;
-}
+/*footer-----------------------------------------------------------*/
 
 .footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
-    margin-top: 183px;
-    margin-bottom: 90px;
-
-    padding-left: 50px;
-    padding-right: 50px;
-
+    padding: 163px 50px 90px 50px;
 }
 
-.footer-menu-list {
+.footer__menu-list {
     text-align: center;
 
     font-size: 18px;
@@ -383,7 +379,7 @@ ul {
 
 }
 
-.socials {
+.footer__social-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -392,7 +388,7 @@ ul {
     width: 240px;
 }
 
-.socials-img {
+.footer__social-list-item {
     width: 48px;
     height: 48px;
 }
