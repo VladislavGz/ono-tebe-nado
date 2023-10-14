@@ -25,7 +25,8 @@ p,
 ul,
 ol,
 li,
-blockquote {
+blockquote,
+address {
   margin: 0;
   padding: 0;
 }
@@ -37,13 +38,4 @@ a {
 
 img {
   width: 100%;
-}
-
-address {
-  margin: 0;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
 }
